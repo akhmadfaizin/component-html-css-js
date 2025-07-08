@@ -10,3 +10,11 @@ function toggleSidebar() {
     toggleIcon.classList.add('fa-chevron-right');
   }
 }
+
+// Auto-resize textarea based on content
+document.querySelectorAll('.input-auto-resize').forEach(textarea => {
+  textarea.addEventListener('input', function () {
+    this.style.height = 'auto'; // Reset height to recalculate
+    this.style.height = `${this.scrollHeight}px`; // Set to content height
+  });
+});
