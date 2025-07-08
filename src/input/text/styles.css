@@ -152,13 +152,26 @@ body {
   display: inline-block;
 }
 
-.input-icon {
+.input-icon-right {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: #808080;
   font-size: 16px;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #808080;
+  font-size: 16px;
+}
+
+.input-item-left-icon {
+  padding-left: 10%;
 }
 
 .input-auto-resize {
