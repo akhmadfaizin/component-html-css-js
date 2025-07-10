@@ -177,6 +177,42 @@ body {
   color: white
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
+.menu-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  border: 1px solid blue
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon-strip {
+  width: 80px;
+  height: 4px;
+  background: #000000;
+  margin: 20px 0px;
+  transition: 0.4s;
+}
+
+.change .strip-1 {
+  transform: translate(0, 22px) rotate(-45deg);
+}
+
+.change .strip-2 {
+  opacity: 0;
+}
+
+.change .strip-3 {
+  transform: translate(0, -22px) rotate(45deg);
+}
+
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 60px;
