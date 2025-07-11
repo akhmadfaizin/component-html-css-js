@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar with Toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <!-- <div class="toggle-btn-container">
+        <button class="normal-button toggle-btn" onclick="toggleSidebar()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div> -->
+      <div class="toggle-btn-container">
+        <button class="normal-button toggle-btn" onclick="toggleSidebar()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="title">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-user"></i>
+            <span class="title">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="long-contents">
+        <div class="content-item">
+          <div class="tabs-container">
+            <div class="tabs-item active">London</div>
+            <div class="tabs-item">Paris</div>
+            <div class="tabs-item">Tokyo</div>
+          </div>
+          <div id="tabs-desc">
+            <div id="tabs-desc-city-name"></div>
+            <div id="tabs-desc-city-desc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
