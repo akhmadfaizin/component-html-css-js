@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar with Toggle</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="toggle-btn-container">
+        <button class="normal-button toggle-btn" onclick="toggleSidebar()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-tachometer-alt"></i>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="title">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-user"></i>
+            <span class="title">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="long-contents">
+        <div class="content-item">
+          <div class="sidebar-content">
+            <div class="sidebar-content-left">
+              <div class="sidebar-content-item" id="about">About</div>
+              <div class="sidebar-content-item" id="blogs">Blogs</div>
+              <div class="sidebar-content-item" id="projects">Projects</div>
+              <div class="sidebar-content-item" id="contacts">Contacts</div>
+            </div>
+            <div class="content-main">
+              <h1>Hoverable Sidenav Buttons</h1>
+              <p>
+                Tambahan Hover over the buttons in the left side navigation to
+                open them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
